@@ -1,0 +1,58 @@
+<!--
+  Generated template for the Signup page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list >
+
+    <ion-item> 
+  
+  <ion-card style="display: inline">
+     <img src="https://traffik.io/fb/v3/_templates/carleton-university/images/sprott-logo.png"/>
+      </ion-card>
+      </ion-item>
+	  
+    <ion-item>
+      <ion-label color="primary" fixed>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" fixed>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+	
+	<ion-item>
+      <ion-label color="primary" fixed>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+	<ion-item>
+      <ion-label color="primary" fixed>Confirm Password</ion-label>
+      <ion-input type=" password" [(ngModel)]="confirmpass"></ion-input>
+    </ion-item>
+	
+  </ion-list>
+
+  <div padding>
+    <button block ion-button   color="primary" (click)="signup()"> Signup</button>
+  </div>
+  
+  <div padding>
+    <button clear block ion-button (click)="gotologin()" > log in</button>
+  </div>
+
+</ion-content>

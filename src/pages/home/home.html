@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+     Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+ 
+
+<ion-content padding>
+   <ion-list >
+     
+	<ion-item> 
+  
+  <ion-card style="display: inline" >
+     <img src="https://traffik.io/fb/v3/_templates/carleton-university/images/sprott-logo.png"/>
+      </ion-card >
+      </ion-item>
+
+	     
+    <ion-item>
+      <ion-label color="primary" fixed>username</ion-label>
+      <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" fixed>password</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button block ion-button   color="primary" (click)="login()"> Login</button>
+  </div>
+  
+  <div padding>
+    <button clear block ion-button (click)="gotosignup()" > Sign up to register </button>
+  </div>
+  
+  
+  
+</ion-content>
